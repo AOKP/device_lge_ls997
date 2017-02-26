@@ -1,12 +1,12 @@
 $(call inherit-product, device/lge/ls997/full_ls997.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AOKP stuff.
+$(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
 
-# Overlays (inherit after vendor/cm to ensure we override it)
+# Overlays (inherit after vendor/aokp to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_NAME := lineage_ls997
+PRODUCT_NAME := aokp_ls997
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="v20" \
